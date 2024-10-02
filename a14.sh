@@ -16,12 +16,12 @@ echo "========================================================================"
 echo "DELETED DIRECTORIES SUCCESSFULLY"
 echo "========================================================================"
 
-#Initiating RisingOS
+#Initiating Voltage os
 echo "========================================================================"
 echo "INITIALIZING ROM REPOSITORY"
 echo "========================================================================"
 
-repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
+repo init -u https://github.com/VoltageOS/manifest.git
 
 echo "========================================================================"
 echo "ROM REPOSITORY INITIALIZED SUCCESSFULLY"
@@ -126,6 +126,4 @@ echo "BUILD STARTING"
 echo "========================================================================"
 
 source build/envsetup.sh
-riseup munch userdebug
-gk -s
-rise b
+brunch device Munch
